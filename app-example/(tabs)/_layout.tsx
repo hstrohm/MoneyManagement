@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="input"
+        options={{
+          title: 'Input',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'pencil' : 'pencil-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
